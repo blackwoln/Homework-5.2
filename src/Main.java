@@ -171,7 +171,7 @@ public class Main {
         напоминаниями по разным датам.
          */
         int firstFriday = 2;
-        for (int day = firstFriday; day < 31; day+=7) {
+        for (int day = firstFriday; day <= 31; day+=7) {
                 System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет");
         }
         System.out.println();
@@ -199,7 +199,7 @@ public class Main {
         int newYear = currentYear + 100;//будущие
 
         for (int year = oldYear; year <= newYear; year++){
-            if ((year - 1896) % 79 == 0) {
+            if (year % 79 == 0) {
                 System.out.println(year);
             }
         }
